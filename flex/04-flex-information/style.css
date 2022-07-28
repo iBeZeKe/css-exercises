@@ -1,5 +1,6 @@
 body {
   font-family: 'Courier New', Courier, monospace;
+  text-align: center;
 }
 
 img {
@@ -10,7 +11,26 @@ img {
 .title {
   font-size: 36px;
   font-weight: 900;
+  margin-bottom: 32px;
+  color:  hsl(300, 25%, 50%);
 }
+
+.plant-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 52px;
+  
+}
+
+/*could try giving it a border and make the borders equal sizes
+so the boxes all have the same dimensions*/
+.plant{
+  max-width: 200px;
+  border: dashed hsl(300, 25%, 50%);
+}
+
+
 
 /* do not edit this footer */
 .footer {
