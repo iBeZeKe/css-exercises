@@ -1,14 +1,60 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+html{
+  --top-spacing: 100px;
+  scroll-padding-top: var(--top-spacing);
+}
 body {
   height: 100vh;
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+  display: flex;
+  flex-direction: column;
+  margin: var(--top-spacing) auto;
+  padding: 0 20px;
+  max-width: 400px;
+}
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px;
+}
+
+.right-links{
+  margin-right: 78px;
+}
+
+.footer{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+
+}
+
+.footer{
+  background-color: #eee;
 }
 
 img {
   width: 600px;
+}
+
+.content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 16px;
 }
 
 button {
@@ -16,6 +62,7 @@ button {
   border: none;
   border-radius: 8px;
   background: #eee;
+  padding: 8px 16px;
 }
 
 input {
@@ -25,3 +72,21 @@ input {
   width: 400px;
   margin-bottom: 16px;
 }
+
+a {
+  /* this removes the line under our links */
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+  gap: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+/*Maybe can modify later to cut down some code...but works for me*/
